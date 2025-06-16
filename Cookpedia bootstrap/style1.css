@@ -1,0 +1,154 @@
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* it uses coz. to put navbar on top of the carousel */
+    box-shadow: none;
+}
+
+
+.navbar .nav-link {
+    color: #fff !important; 
+}
+
+
+.navbar .nav-link:hover {
+    color: #f00 !important; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+header {
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden; 
+}
+
+
+.ci1 .carousel-item img {
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100%;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.7;
+    
+}
+
+.carousel-indicators .active {
+    background-color: #f00; 
+}
+
+.ci2 .carousel-item img {
+    object-fit: cover; 
+    max-height: 500px; 
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; 
+    padding: 10px 20px;  
+    color: #fff; 
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.carousel-caption h5 {
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+#show_bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/pexels-mtyutina-1012725.jpg');
+    width: 100%; 
+    height: auto; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+.ci1 .carousel-item .content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.ci1 .carousel-item .content .title{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.ci1 .carousel-item .content .des{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px; 
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel-caption h5 {
+        font-size: 1.1rem;   
+    }
+    .carousel-caption p {
+        font-size: .5rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 6px;
+        height: 6px;    
+    }
+}
+
+@media (max-width: 768px) {
+    .ci1 .carousel-item .content .title{
+        font-size: 15px;
+    }
+    .ci1 .carousel-item .content .des{
+        font-size: 25px;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+    .ci1 .carousel-item .content .btn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .ci1 .carousel-item .content .title{
+        font-size: 10px;
+    }
+    .ci1 .carousel-item .content .des{
+        font-size: 18px;
+        margin-bottom: 15px;
+        line-height: 22px;
+    }
+    .ci1 .carousel-item .content .btn{
+        font-size: 10px;
+    }
+}
